@@ -1,0 +1,38 @@
+{
+  "name": "moviesearch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21",
+    "react-scripts": "^3.4.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-middleware": "^1.5.1",
+    "webpack-node-externals": "^2.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
