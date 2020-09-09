@@ -32,7 +32,7 @@ h2{
   margin-top:50px
 }
 .footer{
-  margin-top: 200px
+  margin-top: 50px
 }
 .container{
 
@@ -43,6 +43,21 @@ h2{
   right: 150px;
   width: 50px;
   height: 50px;
+}
+.abc{
+  width: 500px;
+  margin: auto;
+}
+.moviePic{
+  width:200px;
+  height:250px;
+  padding-top: 20px
 
+}
+.title{
+  text-align: left;
 
+}
+.title h2{
+  color:black;
 }

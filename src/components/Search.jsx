@@ -1,45 +1,61 @@
-import React from "react";
+import React, {Component} from "react";
 import ReactDOM from "react-dom";
-import Login from "./Login"
+import Login from "./Login";
+import Signup from "./Signup";
+import App from "./App"
 
 
-function Search(props){
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-  function callLogin(){
-    console.log(" I am called");
-    return (<Login />)
- }
 
 
-  return (<div>
+class Search extends React.Component {
+
+  searchChangeHandler(event){
+  console.log("I am called");
+  const movie = event.target.value;
+  const boundObject = this;
+  console.log(boundObject);
+  boundObject.context.performSearch(movie);
+  }
+
+
+  render () { return (<div>
   <div className="header">
-  <h1>{props.header1} <br/>{props.header2}</h1>
+  <h1 >{this.props.header1} <br/>{this.props.header2}</h1>
   </div>
   <div>
+  <Router>
+          <Link to="/login" id="login" >Login</Link>
+          <br></br>
+          <Link to="/signup" id="login" >Signup</Link>
+      <Switch>
+      <Route path="/signup">
+        <Signup />
+      </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </Switch>
 
-  <a onClick={callLogin} id="login"  href="">Login</a>
+  </Router>
   </div>
-
-  <div>
-  <button onClick={callLogin} id="login"  type="button">Login </button>
-  </div>
-
   <div className="footer">
-  <form class="form-inline d-flex justify-content-center md-form form-sm active-purple-2 mt-2">
-  <input class="form-control form-control-sm mr-3 w-75 srch" type="text" placeholder="Search"
+  <form className="form-inline d-flex justify-content-center md-form form-sm active-purple-2 mt-2">
+  <input class="form-control form-control-sm mr-3 w-75 srch" onChange={this.searchChangeHandler.bind(this)} type="text" placeholder="Search movie here"
     aria-label="Search"></input>
   <i class="fas fa-search" aria-hidden="true"></i>
   </form>
   </div>
-  <div class="container">
-  <center>
-
-  <button type="button" class="btn btn-danger btn-rounded">Start Search</button>
-  </center>
-  </div>
 
   </div>
 )
-};
+
+}};
 
 export default Search;
