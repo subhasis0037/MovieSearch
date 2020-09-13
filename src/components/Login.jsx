@@ -2,7 +2,8 @@ import React from "react";
 
 import "./Login.css";
 
-function Login() {
+const Login = () => {
+  console.log("Login called");
   return (
     <div>
       <div className="abc">
@@ -33,14 +34,14 @@ function Login() {
                 ></input>
                 <label
                   className="custom-control-label"
-                  for="defaultLoginFormRemember"
+                  htmlFor="defaultLoginFormRemember"
                 >
                   Remember me
                 </label>
               </div>
             </div>
             <div>
-              <a href="">Forgot password?</a>
+              <a href="/forgot-password">Forgot password?</a>
             </div>
           </div>
 
@@ -50,7 +51,7 @@ function Login() {
 
           <p>
             Not a member?
-            <a href="">Register</a>
+            <a href="/signup">Register</a>
           </p>
 
           <p>or sign in with:</p>

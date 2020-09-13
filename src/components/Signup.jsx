@@ -18,7 +18,7 @@ function Signup() {
                   id="materialRegisterFormFirstName"
                   className="form-control"
                 ></input>
-                <label for="materialRegisterFormFirstName">First name</label>
+                <label htmlFor="materialRegisterFormFirstName">First name</label>
               </div>
             </div>
             <div className="col">
@@ -28,7 +28,7 @@ function Signup() {
                   id="materialRegisterFormLastName"
                   className="form-control"
                 ></input>
-                <label for="materialRegisterFormLastName">Last name</label>
+                <label htmlFor="materialRegisterFormLastName">Last name</label>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ function Signup() {
               id="materialRegisterFormEmail"
               className="form-control"
             ></input>
-            <label for="materialRegisterFormEmail">E-mail</label>
+            <label htmlFor="materialRegisterFormEmail">E-mail</label>
           </div>
 
           <div className="md-form">
@@ -49,7 +49,7 @@ function Signup() {
               className="form-control"
               aria-describedby="materialRegisterFormPasswordHelpBlock"
             ></input>
-            <label for="materialRegisterFormPassword">Password</label>
+            <label htmlFor="materialRegisterFormPassword">Password</label>
             <small
               id="materialRegisterFormPasswordHelpBlock"
               className="form-text text-muted mb-4"
@@ -65,7 +65,7 @@ function Signup() {
               className="form-control"
               aria-describedby="materialRegisterFormPhoneHelpBlock"
             ></input>
-            <label for="materialRegisterFormPhone">Phone number</label>
+            <label htmlFor="materialRegisterFormPhone">Phone number</label>
             <small
               id="materialRegisterFormPhoneHelpBlock"
               className="form-text text-muted mb-4"
@@ -82,7 +82,7 @@ function Signup() {
             ></input>
             <label
               className="form-check-label"
-              for="materialRegisterFormNewsletter"
+              htmlFor="materialRegisterFormNewsletter"
             >
               Subscribe to our newsletter
             </label>
@@ -115,7 +115,7 @@ function Signup() {
           <p>
             By clicking
             <em>Sign up</em> you agree to our
-            <a href="" target="_blank">
+            <a href="/terms-of-service" target="_blank">
               terms of service
             </a>
           </p>
