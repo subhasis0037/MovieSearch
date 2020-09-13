@@ -1,5 +1,6 @@
 import React,{Component} from "react";
-import ReactDOM from "react-dom";
+
+import "./MovieRow.css";
 
 class MovieRow extends Component{
 
