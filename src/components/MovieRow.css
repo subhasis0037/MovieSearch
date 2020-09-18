@@ -1,0 +1,11 @@
+.moviePic {
+  width: 200px;
+  height: 250px;
+  padding-top: 20px;
+}
+.title {
+  text-align: left;
+}
+.title h2 {
+  color: black;
+}

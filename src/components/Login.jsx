@@ -1,56 +1,77 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-function Login(){
+import "./Login.css";
 
-  return(
+const Login = () => {
+  console.log("Login called");
+  return (
     <div>
-  <div className = "abc">
+      <div className="abc">
+        <form className="text-center border border-light p-5 win" action="#!">
+          <p className="h4 mb-4">Sign in</p>
 
-<form class="text-center border border-light p-5 win" action="#!">
+          <input
+            type="email"
+            id="defaultLoginFormEmail"
+            className="form-control mb-4"
+            placeholder="E-mail"
+          ></input>
 
-    <p class="h4 mb-4">Sign in</p>
+          <input
+            type="password"
+            id="defaultLoginFormPassword"
+            className="form-control mb-4"
+            placeholder="Password"
+          ></input>
 
-
-    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail"></input>
-
-
-    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password"></input>
-
-    <div class="d-flex justify-content-around">
-        <div>
-
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember"></input>
-                <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+          <div className="d-flex justify-content-around">
+            <div>
+              <div className="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  className="custom-control-input"
+                  id="defaultLoginFormRemember"
+                ></input>
+                <label
+                  className="custom-control-label"
+                  htmlFor="defaultLoginFormRemember"
+                >
+                  Remember me
+                </label>
+              </div>
             </div>
-        </div>
-        <div>
-            <a href="">Forgot password?</a>
-        </div>
+            <div>
+              <a href="/forgot-password">Forgot password?</a>
+            </div>
+          </div>
+
+          <button className="btn btn-info btn-block my-4" type="submit">
+            Sign in
+          </button>
+
+          <p>
+            Not a member?
+            <a href="/signup">Register</a>
+          </p>
+
+          <p>or sign in with:</p>
+
+          <button className="mx-2">
+            <i className="fab fa-facebook-f light-blue-text"></i>
+          </button>
+          <button className="mx-2">
+            <i className="fab fa-twitter light-blue-text"></i>
+          </button>
+          <button className="mx-2">
+            <i className="fab fa-linkedin-in light-blue-text"></i>
+          </button>
+          <button className="mx-2">
+            <i className="fab fa-github light-blue-text"></i>
+          </button>
+        </form>
+      </div>
     </div>
-
-
-    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
-
-
-    <p>Not a member?
-        <a href="">Register</a>
-    </p>
-
-
-    <p>or sign in with:</p>
-
-    <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
-    <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
-    <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
-    <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
-
-</form>
-
-</div>
-</div>
-  )
-};
+  );
+}
 
 export default Login;

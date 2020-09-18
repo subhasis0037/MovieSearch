@@ -1,7 +1,8 @@
+@import-normalize; /* bring in normalize.css styles */
 
-body {
+/* body {
   background-image: linear-gradient(to left, #a3d2ca ,blue, grey);
- }
+ } */
 /* .header{
   background-color: #a3d2ca
 }
@@ -13,51 +14,12 @@ div h1 {
   color: #a35d6a;
   text-align: center;
 }
-h2{
+h2 {
   color: #a35d6a;
   text-align: center;
 }
-.2ndhalf{
-    background-color: white;
-    width: 100px;
-    length: 1000px
-
-}
-.srch{
-    width: 500%;
-    text-align:center;
-
-}
-.header{
-  margin-top:50px
-}
-.footer{
-  margin-top: 50px
-}
-.container{
-
-  padding-top: 10px
-}
-#login{
-  position: absolute;
-  right: 150px;
-  width: 50px;
-  height: 50px;
-}
-.abc{
-  width: 500px;
-  margin: auto;
-}
-.moviePic{
-  width:200px;
-  height:250px;
-  padding-top: 20px
-
-}
-.title{
-  text-align: left;
-
-}
-.title h2{
-  color:black;
+.2ndhalf {
+  background-color: white;
+  width: 100px;
+  length: 1000px;
 }
