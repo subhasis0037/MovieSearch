@@ -6,6 +6,26 @@
 .title {
   text-align: left;
 }
-.title h2 {
+.title h4 {
   color: black;
+  width: 40%;
+  height: 10;
+  text-align: justify;
+
+}
+.title  p {
+  color: black;
+  width: 60%;
+  height: 50;
+  text-align: justify;
+}
+.view{
+  display: flex;
+  justify-content: left;
+
+}
+.wishlist{
+  display: flex;
+  justify-content: center;
+
 }
