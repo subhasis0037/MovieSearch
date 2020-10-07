@@ -1,8 +1,0 @@
-.navigation {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  border-bottom: 2px solid lightgrey;
-  padding: 10px;
-  width: 400px;
-}
