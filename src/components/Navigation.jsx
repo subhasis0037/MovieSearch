@@ -15,7 +15,12 @@ const Navigation = () => {
       <Link to="signup" id="signup">
         Signup
       </Link>
-    </div>
+      <Link to="wishlist" id="wishlist" >
+        WishList
+      </Link>
+
+      </div>
+
   );
 };
 

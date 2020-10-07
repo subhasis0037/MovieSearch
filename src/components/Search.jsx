@@ -59,7 +59,7 @@ const Search = ({ header1, header2 }) => {
       <div className="search-results">
         <ul>
           {console.log("Successfully fetched data", searchResults) ||
-            searchResults.map((movie) => <MovieRow movie={movie} />)
+            searchResults.map((movie) => <MovieRow movie={movie} poster_src = {"https://image.tmdb.org/t/p/w185" + movie.poster_path} />)
           }
         </ul>
       </div>

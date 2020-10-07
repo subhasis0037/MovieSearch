@@ -20,12 +20,21 @@
   text-align: justify;
 }
 .view{
-  display: flex;
-  justify-content: left;
+
+  display:inline-block;
+   margin-right:20px;
+   border: none;
+   background-color: #40a8c4
+
+
 
 }
 .wishlist{
-  display: flex;
-  justify-content: center;
+
+  display:inline-block;
+   margin-right:20px;
+   border: none;
+   background-color: #40a8c4
+
 
 }
