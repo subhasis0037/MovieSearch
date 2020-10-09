@@ -10,7 +10,7 @@ const Routes = () => (
     <Redirect exact path="/" to="/home" />
     <Route path="/home" component={Home} />
     <Route path="/signup" component={Signup} />
-    <Route path="/login" component={Login} />
+    <Route path="/login" component={Login} / >
   </Switch>
 );
 
