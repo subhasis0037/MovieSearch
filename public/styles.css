@@ -1,0 +1,25 @@
+@import-normalize; /* bring in normalize.css styles */
+
+/* body {
+  background-image: linear-gradient(to left, #a3d2ca ,blue, grey);
+ } */
+/* .header{
+  background-color: #a3d2ca
+}
+.footer{
+
+
+} */
+div h1 {
+  color: #a35d6a;
+  text-align: center;
+}
+h2 {
+  color: #a35d6a;
+  text-align: center;
+}
+.2ndhalf {
+  background-color: white;
+  width: 100px;
+  length: 1000px;
+}
